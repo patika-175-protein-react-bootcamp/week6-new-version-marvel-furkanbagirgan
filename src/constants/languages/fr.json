@@ -1,0 +1,11 @@
+{
+    "singleLoading":"Caractère De Chargement...",
+    "multipleLoading":"Chargement Ces Caractères...",
+    "searchTitle":"Rechercher Des Personnages",
+    "searchPlaceholder":"Tapez le caractère que vous souhaitez rechercher",
+    "backButton":"Faire Demi-Tour",
+    "characterName":"Le Nom Du Personnage:",
+    "characterComics":"Bandes Dessinées Avec Le Personnage:",
+    "characterDesc":"Description Du Personnage:",
+    "descNone":"Pas Trouvé."
+}

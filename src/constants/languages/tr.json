@@ -1,0 +1,11 @@
+{
+    "singleLoading":"Karakter Yükleniyor...",
+    "multipleLoading":"Karakterler Yükleniyor...",
+    "searchTitle":"Karakter Ara",
+    "searchPlaceholder":"Aramak istediğiniz karakteri yazınız",
+    "backButton":"Geri Dön",
+    "characterName":"Karakter Adı:",
+    "characterComics":"Karakterin Bulunduğu Çizgi Romanlar:",
+    "characterDesc":"Karakter Açıklaması:",
+    "descNone":"Bulunamadı."
+}

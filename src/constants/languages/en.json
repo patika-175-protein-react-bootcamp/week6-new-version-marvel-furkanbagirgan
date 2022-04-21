@@ -1,0 +1,11 @@
+{
+    "singleLoading":"Loading Character...",
+    "multipleLoading":"Loading Characters...",
+    "searchTitle":"Search For Characters",
+    "searchPlaceholder":"Write the character you want to search",
+    "backButton":"Turn Back",
+    "characterName":"Character Name:",
+    "characterComics":"Comics With The Character:",
+    "characterDesc":"Character Description:",
+    "descNone":"Not Found."
+}
