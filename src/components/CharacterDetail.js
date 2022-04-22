@@ -22,7 +22,7 @@ function CharacterDetail({characterId}){
     <div className="dp-flex-wrap wd-100">
       {
         character?.data?.length>0 &&
-        <div className="dp-flex-row detail">
+        <div className="dp-flex-row wd-100 spacebet-flexstart detail">
           <img
             className="detailImg"
             src={
@@ -32,9 +32,9 @@ function CharacterDetail({characterId}){
             }
             alt=""
           />
-          <div className="detailCharacter">
+          <div className="dp-flex-col spacebet-flexstart detailCharacter">
             <div className="characterName"><span>{t("characterName")}</span><strong>{" "+character.data[0].name}</strong></div>
-            <div className="characterComics">
+            <div className="dp-flex-col characterComics">
               <span>{t("characterComics")}</span>
               <ul className="comics">
                 {character.data[0].comics.items.slice(0,10).map((item,index)=>

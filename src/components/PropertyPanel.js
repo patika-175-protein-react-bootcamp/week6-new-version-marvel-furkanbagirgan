@@ -37,22 +37,22 @@ function PropertyPanel({isDetail}) {
   }
 
   return (
-    <div className="dp-flex propertyPanel">
+    <div className="dp-flex wd-100 propertyPanel">
         {isDetail ? 
-          <div className="backButtonContainer">
+          <div className="dp-flex backButtonContainer">
             <button className="backButton" onClick={()=>navigate(-1)}>{t("backButton")}</button>
           </div>
           :
-          <div className="searchContainer">
-            <div className="searchBar">
+          <div className="dp-flex-col searchContainer">
+            <div className="dp-flex-col spacebet-flexstart searchBar">
                 <label className="searchLabel">{t("searchTitle")}</label>
-                <input ref={searchRef} className="searchInput" onClick={() => setOpen(true)} type="text" placeholder={t("searchPlaceholder")} value={wordEntered} onChange={handleFilter}/>
+                <input ref={searchRef} className="block-font searchInput" onClick={() => setOpen(true)} type="text" placeholder={t("searchPlaceholder")} value={wordEntered} onChange={handleFilter}/>
             </div>
             {searchCharacters?.data?.length > 0 && open &&(
-              <div className="searchResult">
+              <div className="wd-100 searchResult">
                 {searchCharacters?.data?.map((item,index) => {
                   return (
-                    <span key={index} className="searchItem" onClick={()=>searchClick(item.id)}>
+                    <span key={index} className="dp-flex searchItem" onClick={()=>searchClick(item.id)}>
                       <p>{t("characterName")+" "+item.name}</p>
                     </span>
                   );
@@ -61,7 +61,7 @@ function PropertyPanel({isDetail}) {
             )}
           </div>
         }
-        <div className="langBar">
+        <div className="dp-flex-row langBar">
             <span className={activeLang==="FR"?"dp-flex-row activeLang":"dp-flex-row lang"} onClick={()=>changeLanguage("fr")}>FR</span>
             <span className={activeLang==="EN"?"dp-flex-row activeLang":"dp-flex-row lang"} onClick={()=>changeLanguage("en")}>EN</span>
             <span className={activeLang==="TR"?"dp-flex-row activeLang":"dp-flex-row lang"} onClick={()=>changeLanguage("tr")}>TR</span>

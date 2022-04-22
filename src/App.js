@@ -7,7 +7,7 @@ import { CharactersProvider } from './contexts/character';
 function App() {
   return (
     <CharactersProvider>
-      <div className="mar-pad-reset dp-flex-col">
+      <div className="dp-flex-col">
         <Header />
         <Router />
       </div>
